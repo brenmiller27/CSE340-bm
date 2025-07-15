@@ -44,6 +44,13 @@ footer {
   font-family: sans-serif;
 }
 
+#tools {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: sans-serif;
+  font-size: large;
+}
+
 nav ul  {
   list-style-type: none;
   color: var(--fourth-color);
@@ -70,7 +77,7 @@ nav {
 }
 
 .upgradeCard{
-  background-color: var(--tertiary-color);
+  background-color: var(--primary-color);
   padding: 50px;
   display: flex;
   margin-bottom: 20px;
