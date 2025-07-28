@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "BCMdb",
+            "connectionTimeout": 30,
+            "database": "bcmcse_db",
+            "username": "bcmcse_db_user"
+        }
+    ]
+}

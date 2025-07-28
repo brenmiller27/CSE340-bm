@@ -1,4 +1,4 @@
-const {pool} = require("pg")
+const {Pool} = require("pg")
 require("dotenv").config()
 
 let pool
@@ -25,12 +25,12 @@ if (process.env.NODE_ENV ==="development") {
 module.exports = {
   async query(text, params) {
     try {
-      const res = await pool.query(text, params)
-      console.log("executed query", { text })
-      return res
+      const res = await pool.query(text, params);
+      console.log("executed query", { text });
+      return res;
     } catch (error) {
-      console.error("error in query", { text })
-      throw error
+      console.error("error in query", { text });
+      throw error;
     }
   },
 }
@@ -38,5 +38,5 @@ module.exports = {
   pool = new Pool({
     connectionString: process.env.DATABASE_URL,
   })
-  module.exports = pool
+  module.exports = pool;
 }
