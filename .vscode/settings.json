@@ -1,14 +1,16 @@
 {
     "sqltools.connections": [
         {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
             "previewLimit": 50,
             "server": "localhost",
-            "port": 5432,
             "driver": "PostgreSQL",
-            "name": "BCMdb",
-            "connectionTimeout": 30,
-            "database": "bcmcse_db",
-            "username": "bcmcse_db_user"
+            "name": "render.com",
+            "connectString": "postgresql://bcmcse_db_user:VdKL4EJ8olTZ5XbzUo0znfB9E0fdNiIM@dpg-d1qthmjipnbc73epbi0g-a.oregon-postgres.render.com/bcmcse_db"
         }
     ]
 }

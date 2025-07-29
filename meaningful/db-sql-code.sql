@@ -6,7 +6,7 @@ CREATE TYPE public.account_type AS ENUM(
 
 
 ALTER TYPE public.sample
-    OWNER TO cse340db
+    OWNER TO bcmcse-db
 
 
 --table structure for table classification
